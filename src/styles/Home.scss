@@ -1,0 +1,86 @@
+.flight-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th,
+    td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    td:first-child {
+        text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+}
+
+.form_addfield {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+.form_addfield>input,
+select {
+
+
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.form_addfield>input::placeholder {
+
+    font-family: ubuntu;
+    font-size: 14px;
+}
+
+.form_addfield>#input_field:focus {
+    outline: none;
+    border: 3px solid #34d93f;
+    border-radius: 5px;
+
+    font-family: ubuntu;
+    font-size: 16px;
+    /* font-weight: bold; */
+
+}
+
+#input_field:focus::placeholder {
+    color: transparent;
+    text-align: center;
+    /* cursor: bold; */
+
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 2%;
+
+    button {
+        width: 100px;
+        height: 40px;
+    }
+}

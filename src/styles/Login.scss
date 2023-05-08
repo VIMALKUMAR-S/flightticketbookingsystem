@@ -1,0 +1,49 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+
+    &__label {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    &__input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover:not(:disabled) {
+            background-color: #0062cc;
+        }
+    }
+
+    &__button--disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    &__error {
+        color: red;
+        margin-bottom: 10px;
+    }
+}
